@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10150f">
+  <title>EB DO LITERAL | Central de Verificação</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="top">
+      <div class="crest">EB</div>
+      <div><p class="eyebrow">EXÉRCITO BRASILEIRO RP</p><h1>EB DO LITERAL</h1></div>
+      <span class="status">CENTRAL</span>
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">ACESSO À COMUNIDADE</p>
+      <h2>Central de <span>Verificação</span></h2>
+      <p class="intro">Confirme que você controla sua conta Roblox usando um código temporário na descrição pública do seu perfil.</p>
+    </section>
+
+    <section class="panel">
+      <div class="step"><span>01</span><div><h3>Informe seu usuário Roblox</h3><p>Digite seu nome de usuário, sem senha.</p></div></div>
+      <form id="startForm">
+        <label for="username">NOME DE USUÁRIO</label>
+        <div class="inputrow"><span>@</span><input id="username" maxlength="20" placeholder="SeuNickRoblox" autocomplete="off" required></div>
+        <button type="submit" id="startBtn">GERAR CÓDIGO</button>
+      </form>
+
+      <div id="codeArea" class="codearea hidden">
+        <div class="step"><span>02</span><div><h3>Coloque o código na bio</h3><p>Abra seu perfil Roblox, edite a descrição e adicione o código abaixo.</p></div></div>
+        <div class="code" id="code">EBL-XXXXXX</div>
+        <button type="button" class="secondary" id="copyBtn">COPIAR CÓDIGO</button>
+        <p class="hint">Depois de salvar a descrição no Roblox, volte aqui e clique em verificar.</p>
+        <button type="button" id="verifyBtn">VERIFICAR AGORA</button>
+      </div>
+      <div id="message" class="message" role="status"></div>
+    </section>
+
+    <section class="notes">
+      <h3>Segurança</h3>
+      <ul>
+        <li>Nunca pedimos sua senha, cookies ou códigos de autenticação.</li>
+        <li>O código é temporário e expira em 15 minutos.</li>
+        <li>Depois da confirmação, você pode remover o código da bio.</li>
+      </ul>
+    </section>
+    <footer>EB DO LITERAL · Central de Verificação<br><small>Projeto comunitário independente, sem afiliação oficial à Roblox.</small></footer>
+  </main>
+  <script src="/app.js"></script>
+</body>
+</html>
